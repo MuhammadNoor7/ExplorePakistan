@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title> Khayber Pakhtunkhwa Tourism</title>
+</head>
+<body>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Explore Pakistan</label>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="dropdown">
+
+                    <div class="dropdown-content">
+                        <li class="dropdown">
+                            <a class ="active" href="#">Destinations</a>
+                            <div class="dropdown-content">
+                                <a href="Destinations.html">Punjab</a>
+                                <a href="sindh.html">Sindh</a>
+                                <a href="KPK.html">KPK</a>
+                                <a href="Balochistan.html">Balochistan</a>
+                                <a href="Kashmir.html">Kashmir </a>
+                                <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                            </div>
+                        </li>
+        
+                        <li class="dropdown">
+                            <a href="Geographical_History.html">Geographical History</a>
+                            <div class="dropdown-content">
+                                <a href="Geographical_history.html">Punjab</a>
+                                <a href="sindh.html">Sindh</a>
+                                <a href="KPK-geo.html">KPK</a>
+                                <a href="Balochistan-geo.html">Balochistan</a>
+                                <a href="Kashmir-geo.html">Kashmir </a>
+                                <a href="GB-geo.html">Gilgit Baltistan</a>
+                            </div>
+                        </li>
+
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+
+            </ul>
+        </nav>   
+    <main>
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Takht-i-Bahi.jpeg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Takht-i-Bahi Buddhist Monastery</div>
+                    <div class="tourist-spot-description">
+                        Takht-i-Bahi, a UNESCO World Heritage site in Khyber Pakhtunkhwa, Pakistan, is an ancient Buddhist monastery complex dating back to the 1st century CE, showcasing remarkable Gandhara architecture.</div>
+                    <div class="tourist-spot-rating">Rating: 4.8</div>
+                    <div class="tourist-spot-price">$30per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Dating back to the 1st century CE, it represents the well-preserved example of Buddhist monastic architecture.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Chitral National Park.jpeg" alt="Tourist Spot 2">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Chitral Gol National Park</div>
+                    <div class="tourist-spot-description">Chitral Gol National Park in Khyber Pakhtunkhwa, Pakistan, is renowned for its stunning alpine landscapes, diverse flora and fauna, and serves as a vital habitat for the endangered Markhor goat.</div>
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$30 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Chitral Gol National Park in Khyber Pakhtunkhwa, Pakistan, is historically significant for its role in conserving the endangered Kashmir markhor, a majestic wild goat species.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Kumrat Valley.jpeg" alt="Tourist Spot 3">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Kumrat Valley</div>
+                    <div class="tourist-spot-description">Kumrat Valley, nestled in the scenic Upper Dir region of Khyber Pakhtunkhwa, Pakistan, is renowned for its breathtaking landscapes, dense forests, and pristine beauty.</div>
+                    <div class="tourist-spot-rating">Rating: 4.2</div>
+                    <div class="tourist-spot-price">$150 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Known for its rich historical significance, with the area having been traversed by various ancient civilizations and trade routes over the centuries.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Lulusar Lake.jpeg" alt="Tourist Spot 4">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Lulusar Lake</div>
+                    <div class="tourist-spot-description">Lulusar Lake, situated in the Kaghan Valley of Pakistan, is a breathtaking high-altitude alpine lake surrounded by snow-capped peaks, offering a stunning reflection of the surrounding mountains.</div>
+                    <div class="tourist-spot-rating">Rating: 5.0</div>
+                    <div class="tourist-spot-price">$180 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Lulusar Lake in Pakistan holds historical significance as it is believed to be the site where 55 participants of a 19th-century freedom movement were captured and later executed by the British.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Peshawar Museum.jpeg" alt="Tourist Spot 5">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Peshawar Museum</div>
+                    <div class="tourist-spot-description">Peshawar Museum, located in Khyber Pakhtunkhwa, Pakistan, showcases a diverse collection of artifacts, manuscripts, and archaeological treasures reflecting the region's rich history and cultural heritage.</div>
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$29 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Peshawar Museum in Pakistan houses artifacts dating back to the Gandhara civilization, showcasing the region's rich history and cultural heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

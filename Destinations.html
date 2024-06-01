@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title>Punjab Tourism</title>
+</head>
+<body>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Explore Pakistan </label>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class ="active" href="#">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="Destinations.html">Punjab</a>
+                        <a href="sindh.html">Sindh</a>
+                        <a href="KPK.html">KPK</a>
+                        <a href="Balochistan.html">Balochistan</a>
+                        <a href="Kashmir.html"> Kashmir</a>
+                        <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class ="" href="#">Geographical History</a>
+                    <div class="dropdown-content">
+                        <a href="Geographical_history.html">Punjab</a>
+                        <a href="Sindh_GeoGraphical_History.html">Sindh</a>
+                        <a href="KPK-geo.html">KPK</a>
+                        <a href="Balochistan-geo.html">Balochistan</a>
+                        <a href="Kashmir-geo.html">Kashmir</a>
+                        <a href="Gilgit_Geographical_History.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+
+                <li><a href="About.html">About Us</a></li>
+
+                <li><a href="login.html">Login / Signup</a></li>
+
+            </ul>
+        </nav>
+    <main>
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Lahore_fort.jpg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Shahi Fort Lahore</div>
+                    <div class="tourist-spot-description">Explore the ancient history of Punjab in this magnificent fort.</div>
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The historical fort was built in the 16th century...</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Wah gah border.webp" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Wahgah Border</div>
+                    <div class="tourist-spot-description">Experience the vibrant culture at the Indo-Pak border.</div>
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The historical fort was built in the 16th century...</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Taxila Musuem.jpg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Taxila Musuem</div>
+                    <div class="tourist-spot-description">Explore the Musem of Taxila and enter into real charming side of history</div>
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Was Founded in 1918</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Katas_raj_Choa_saiden_Shah.jpg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Katas Raj Choa Saiden Shah</div>
+                    <div class="tourist-spot-description">Explore the ancient History of Hindu civilization in this magnificent Temple</div>
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The historical fort was built in between 7 and 10 century...</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Pakistan Monument.jpg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Pakistan Monument</div>
+<div class="tourist-spot-description">
+    Explore the iconic Pakistan Monument in Islamabad, a national symbol that stands proudly at the west viewpoint of the Shakarparian Hills.
+</div>
+
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The historical fort was built in the 16th century...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

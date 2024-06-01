@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home_dark.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="Nav_bar.css">
+
+    <title>Explore Pakistan - Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check" onclick="toggleMenu()">&#9776;</label>
+
+            <label class="logo">Explore Pakistan </label>
+
+            <label for="check" class="checkbtn"></label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="Destinations.html">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="Destinations.html">Punjab</a>
+                        <a href="sindh.html">Sindh</a>
+                        <a href="KPK.html">KPK</a>
+                        <a href="Balochistan.html">Balochistan</a>
+                        <a href="Kashmir.html">Kashmir </a>
+                        <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="Geographical_History.html">Geographical History</a>
+                    <div class="dropdown-content">
+                        <a href="Geographical_history.html">Punjab</a>
+                        <a href="sindh.html">Sindh</a>
+                        <a href="KPK-geo.html">KPK</a>
+                        <a href="Balochistan-geo.html">Balochistan</a>
+                        <a href="Kashmir-geo.html">Kashmir </a>
+                        <a href="GB-geo.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+
+
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+
+            </ul>
+        </nav>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                var check = document.getElementById("check");
+        
+                if (check.checked) {
+                    menu.style.display = "flex";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slideshow">
+                <img src="Images slide/Pakistani_tourist.jpg" alt="Hero Image 1">
+                <img src="Images slide/Tourism_in_pakistan.png" alt="Hero Image 2">
+                <img src="Images slide/Tourism_in_pakistan_2.jpg" alt="Hero Image 3">
+            </div>
+            <div class="hero-text">
+                <h1>Welcome to Explore Pakistan</h1>
+                <p>Discover the breathtaking beauty of Pakistan's diverse landscapes, cultures, and history.</p>
+            </div>
+        </section>
+        
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination">
+                <a href="Geographical_history.html">
+                <img src="Image Provinces/Punjab.jpeg" alt="Destination 1">
+                <h3>Punjab</h3>
+                <div id="content">
+                <p>Punjab, often referred to as the "Land of Five Rivers," is a culturally rich and historically significant region in Pakistan. With bustling cities like Lahore and historical sites like the Badshahi Mosque, Punjab offers a diverse experience for travelers. Explore the vibrant culture, delicious cuisine, and architectural marvels of this dynamic province.</p>
+            </div>
+            </div>
+            <div class="destination">
+                <a href="sindh.html">
+                <img src="Image Provinces/Beautiful_Sindh.jpg" alt="Destination 2">
+                <h3>Sindh</h3>
+                <div id="content">
+                <p>Sindh is a province in southeastern Pakistan with a rich cultural and historical heritage. It is known for its vibrant cities, such as Karachi, and landmarks like Mohenjo-daro, an ancient archaeological site. Explore the diverse landscapes and immerse yourself in the unique traditions of Sindh.</p>
+                </div>
+            </div>
+            
+            <div class="destination">
+                <a href="Balochistan-geo.html">
+                    <img src="Image Provinces/Balochistan.jpg" alt="Destination 3">
+                    <h3>Balochistan</h3>
+                    <div id="content">
+                    <p>Balochistan, the largest province of Pakistan, is a land of contrasts with its vast deserts, rugged mountains, and coastal beauty along the Arabian Sea. Explore the unique culture and traditions of Balochistan, known for its nomadic tribes and historical sites. Immerse yourself in the tranquility of the landscapes and discover the hidden gems of this diverse region.</p>
+                </div>
+                
+                
+            </div>
+            <div class="destination">
+
+                    <img src="Image Provinces/KPK_image.png" alt="Destination 4" >
+                    <a href="KPK-geo.html">
+                    <h3>Khyber Pakhtunkhwa (KPK)</h3>
+                    <div id="content">
+                    <p>Khyber Pakhtunkhwa, commonly known as KPK, is a province in northern Pakistan renowned for its breathtaking mountainous landscapes, including the scenic valleys of Swat and the majestic peaks of the Himalayas. Experience the rich cultural tapestry of KPK and indulge in adventure activities amidst its natural beauty. Discover the unique blend of tradition and modernity that KPK has to offer.</p>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="destination">
+            <img src="Image Provinces/Gilgit Baltistan new.png" alt="Destination 5">
+            <h3>Gilgit Baltistan</h3>
+            <div id="content">
+            <p>Gilgit Baltistan, a northern region of Pakistan, is a paradise for nature lovers and adventure seekers. Surrounded by the towering peaks of the Karakoram Range, it offers breathtaking landscapes, including glaciers, lakes, and lush valleys. Immerse yourself in the rich culture of Gilgit Baltistan, home to diverse ethnicities and a hub for mountaineering and trekking enthusiasts. Explore the unparalleled beauty and serenity of this mountainous wonderland.</p>
+        </div>
+        </div>
+
+        <div class="destination">
+            <img src="Image Provinces/kashmir.image.jpg" alt="Destination 6">
+            <h3>Kashmir</h3>
+            <div id="content">
+            <p>Nice people and fertile, green and scenic mountain valleys are characteristics of Azad Kashmir, making it one of the most beautiful regions on the Subcontinent. While Kashmir as a whole is undoubtedly one of the most beautiful regions in the world, Azad Kashmir is as well rich in natural beauty and often dubbed "Heaven on Earth" by tourists for its scenic natural beauty and stunning landscapes. </p>
+        </div>
+        </div>
+        
+    </div>
+
+        </section>
+    </main>
+
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Explore Pakistan Tourism. All rights reserved.</p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

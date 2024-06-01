@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title> Gilgit Baltistan Tourism</title>
+</head>
+<body>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Explore Pakistan</label>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a class ="active" href="Destinations.html">DESTINATIONS</a>
+                    <div class="dropdown-content">
+                        <a href="Destinations.html">Punjab</a>
+                        <a href="Sindh.html">Sindh</a>
+                        <a href="KPK.html">KPK</a>
+                        <a href="Balochistan.html">Balochistan</a>
+                        <a href="Kashmir.html">Kashmir</a>
+                        <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Geographical_history.html">GEOGRAPHICAL HISTORY</a>
+                    <div class="dropdown-content">
+                        <a href="Geographical_history.html">Punjab</a>
+                        <a href="Sindh.html">Sindh</a>
+                       <a href="KPK.html">KPK</a>
+                       <a href="Balochistan.html">Balochistan</a>
+                       <a href="Kashmir-geo.html">Kashmir</a>
+                        <a href="GB-geo.html">Gilgit Baltistan</a>           
+                    </div>
+                    </li>
+
+                <li><a href="Aboutus.html">ABOUT US</a></li>
+                <li><a href="login.html">LOGIN/SIGNUP</a></li>
+
+            </ul>
+        </nav>        <!-- Your header content goes here -->
+    <main>
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/altit-fort.jpg" alt="Altit Fort">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Altit Fort</div>
+                    <div class="tourist-spot-description">Altit Fort (Urdu: قلعہ التیت) is an ancient fort in the Altit town in the Hunza valley in Gilgit Baltistan, Pakistan. It was originally home to the hereditary rulers of the Hunza state who carried the title of 'Mir', although they moved to the somewhat younger Baltit fort nearby three centuries later.</div>
+                    <div class="tourist-spot-rating">Rating: 4.6</div>
+                    <div class="tourist-spot-price">$55per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p> Altit Fort is a tourist site which has been open to the public since 2007.</p>
+                        <!-- Add more history content as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/attabad.lake.jpg" alt="Attabad Lake">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Attabad Lake</div>
+                    <div class="tourist-spot-description">Attabad Lake (sometimes called Gojal Lake) is a lake in Hunza Valley in northern Pakistan. The lake was created by a landslide which happened in the village of Attabad on 4 January 2010.</div>
+                    <div class="tourist-spot-rating">Rating: 4.7</div>
+                    <div class="tourist-spot-price">$40 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>A look at the calm and clear blue water of Attabad Lake will make you feel like you are living in Heaven and the lake is really picturesque.</p>
+                        <!-- Add more history content as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/hussaini-suspension-bridge.jpg" alt="Hussaini-Suspension Bridge">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Hussaini Suspension Bridge</div>
+                    <div class="tourist-spot-description">Known as the most dangerous bridge in the world, the Hussaini Hanging Bridge is only one of many precarious rope bridges in Northern Pakistan.</div>
+
+                    <div class="tourist-spot-rating">Rating: 4.2</div>
+                    <div class="tourist-spot-price">$50 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Stretching over the glacier-fed waters of the Hunza River and linking the rugged faces of the Karakoram Range, the Hussaini Hanging Bridge appears to be no more than a delicate thread.06-</p>
+                        <!-- Add more history content as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/rama lake.jpg" alt="Rama Lake">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Rama Lake</div>
+                    <div class="tourist-spot-description">Rama Lake is a lake close to Astore in Gilgit-Baltistan, Pakistan. It is on the pinnacle of the lovable Astore Valley that has a mild overlaying of very welltrees and different greenery.</div>
+                    <div class="tourist-spot-rating">Rating: 4.4</div>
+                    <div class="tourist-spot-price">$37 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>How high is Rama Lake from sea level?
+                            Rama lake is 4 km away from rama meadows and is situated at elevation of 11500 feet above sea level. This lake is reached by a steap 4x4 mud track . There are a few glaciers on the way.</p>
+                        <!-- Add more history content as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/sacredstones.of Hunza.jpg" alt="Sacred Stones of Hunza">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Sacred Stones of Hunza</div>
+<div class="tourist-spot-description">The Sacred Rocks (Haldeikish) are situated between the Hunza River and the Karakorum Highway and a five minutes drive from the UNESCO enlisted village of Ganish, near the town of Karimabad in Hunza Valley.</div>
+
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$29 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The Sacred Rocks of Hunza or Haldeikish is one of the earliest sites of Petroglyphs along the ancient Silk Route. It is a cultural heritage site in Gilgit-Baltistan, Pakistan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

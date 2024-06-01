@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav-bar {
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-us {
+    background-color: #444;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ddd;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+ul, .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-content{
+    display: flex;
+    text-align: center;
+}
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content li {
+    display: inline;
+    text-align: left 50%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Adjust the existing styles or add new ones to center-align the footer-about content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-about {
+    text-align: center;
+}
+
+.footer-about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-about li {
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}

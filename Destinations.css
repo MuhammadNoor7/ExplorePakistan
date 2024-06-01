@@ -1,0 +1,73 @@
+/* Add your additional styling for the Punjab page here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+main {
+    padding: 20px;
+    background-color: #333; /* Slightly darker background for main content */
+}
+
+.tourist-spots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tourist-spot-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #444; /* Darker card background */
+}
+
+.tourist-spot-card.active {
+    border-left: 5px solid #f8d320;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tourist-spot-card:hover {
+    transform: scale(1.02);
+}
+
+.tourist-spot-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.tourist-spot-info {
+    padding: 15px;
+}
+
+.tourist-spot-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tourist-spot-description {
+    margin-bottom: 10px;
+}
+
+.tourist-spot-rating {
+    color: rgb(112, 205, 245)
+}
+
+.tourist-spot-price {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.tourist-spot-history {
+    display: none;
+}

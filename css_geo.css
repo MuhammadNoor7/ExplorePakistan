@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav-bar {
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+.geography-section {
+    border: 1px solid #555; /* Darker border color */
+    padding: 30px; /* Reduced padding */
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 800px; /* Reduced maximum width for the card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+h2 {
+    color: #fff; /* Light text color */
+    font-size: 24px; /* Reduced font size for headings */
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%; /* Make the image fill its container */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #ddd; /* Lighter text color */
+    font-size: 16px; /* Reduced font size for paragraphs */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title> Kashmir Tourism</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Explore Pakistan</label>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li class="dropdown">
+
+                <div class="dropdown-content">
+                    <li class="dropdown">
+                        <a class ="active" href="#">Destinations</a>
+                        <div class="dropdown-content">
+                            <a href="Destinations.html">Punjab</a>
+                            <a href="sindh.html">Sindh</a>
+                            <a href="KPK.html">KPK</a>
+                            <a href="Balochistan.html">Balochistan</a>
+                            <a href="Kashmir.html">Kashmir</a>
+                            <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                        </div>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="Geographical_History.html">Geographical History</a>
+                        <div class="dropdown-content">
+                            <a href="Geographical_history.html">Punjab</a>
+                            <a href="sindh.html">Sindh</a>
+                            <a href="KPK-geo.html">KPK</a>
+                            <a href="Balochistan-geo.html">Balochistan</a>
+                            <a href="Kashmir-geo.html">Kashmir </a>
+                            <a href="GB-geo.html">Gilgit Baltistan</a>
+                        </div>
+                    </li>
+
+            <li><a href="About.html">About Us</a></li>
+
+            <li><a href="login.html">Login / Signup</a></li>
+
+        </ul>
+    </nav>       
+    <main><!-- Location 1/intro-->
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Ratti Gali Lake.jpg" alt="Ratti Gali Lake">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Ratti Gali Lake</div>
+                    <div class="tourist-spot-description">Explore the breath taking and amazing views of the Ratti Lake and get an experience like never before.</div>
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$45 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p> The lake is fed by the surrounding glacier waters of the mountains.</p>
+
+                    </div>
+                </div>
+            </div><!-- Location 2-->
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/Neelum River.jpg" alt="Neelum River">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Neelum River</div>
+                    <div class="tourist-spot-description">Experience the sceneric environment in Neelum Valley as it distinguishes two nations by itself.</div>
+                    <div class="tourist-spot-rating">Rating: 4.6</div>
+                    <div class="tourist-spot-price">$35 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>It originates in Ganderbal district of Jammu and Kashmir in India, flows through the Neelam Valley in Pakistan's Azad Kashmir, where parts of its course fall along the Line of Control, before merging with the Jhelum River near the city of Muzaffarabad.</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Location 3-->
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/Chitral Gol Lake.jpg" alt="Chitral Gol Lake">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Chitral Gol Lake</div>
+                    <div class="tourist-spot-description">Hunt for the experiences in finding more about cedar trees and protection of wildlife</div>
+                    <div class="tourist-spot-rating">Rating: 4.2</div>
+                    <div class="tourist-spot-price">$30 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>It stands at an elevation of over 2800 metres above the sea level.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/Mount Rakaposhi Lake .jpg" alt="Mount Rakaposhi Lake">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Mount Rakaposhi Lake</div>
+                    <div class="tourist-spot-description">Explore the stunning views of the Rakaposhi mountain. It stands for Dumani in local language which means Mother of Mist.</div>
+                    <div class="tourist-spot-rating">Rating: 4.7</div>
+                    <div class="tourist-spot-price">$34 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Rakaposhi is tall and proud ,  representing  a true marvel of nature.</p>
+                        <!-- Location 4-->
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="Image Provinces/Tollipeer.jpg" alt="Tolipir">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Tollipeer</div>
+<div class="tourist-spot-description">Experience the sight of Tollipeer as you will feel like you are on the top of the world here.</div>
+<!-- Location 5-->
+                    <div class="tourist-spot-rating">Rating: 4.5</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>It is about a 120 min drive from Rawalakot  in Azad Kashmir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

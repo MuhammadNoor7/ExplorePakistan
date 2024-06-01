@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title> Balochistan Tourism</title>
+</head>
+<body>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Explore Pakistan</label>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="dropdown">
+
+
+                        <li class="dropdown">
+                            <a class ="active" href="#">Destinations</a>
+                            <div class="dropdown-content">
+                                <a href="Destinations.html">Punjab</a>
+                                <a href="sindh.html">Sindh</a>
+                                <a href="KPK.html">KPK</a>
+                                <a href="Balochistan.html">Balochistan</a>
+                                <a href="Kashmir.html">Kashmir </a>
+                                <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                            </div>
+                        </li>
+        
+                        <li class="dropdown">
+                            <a href="Geographical_History.html">Geographical History</a>
+                            <div class="dropdown-content">
+                                <a href="Geographical_history.html">Punjab</a>
+                                <a href="sindh.html">Sindh</a>
+                                <a href="KPK-geo.html">KPK</a>
+                                <a href="Balochistan-geo.html">Balochistan</a>
+                                <a href="Kashmir-geo.html">Kashmir </a>
+                                <a href="GB-geo.html">Gilgit Baltistan</a>
+                            </div>
+                        </li>
+
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+
+            </ul>
+        </nav>        
+    <main>
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Princess Of Hope.jpeg" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Princess Of Hope</div>
+                    <div class="tourist-spot-description">Princess of Hope is a natural rock formation located in the Hingol National Park of Balochistan, Pakistan, resembling the profile of a princess and considered a significant landmark.</div>
+                    <div class="tourist-spot-rating">Rating: 4.8</div>
+                    <div class="tourist-spot-price">$80per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p> Princess Of Hope has geological origins dating back millions of years and gained cultural significance as a symbol of resilience and hope in the region.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Hazarganji Chiltan National Park.jpeg" alt="Tourist Spot 2">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Hazarganji-Chiltan National Park</div>
+                    <div class="tourist-spot-description">Hazarganji-Chiltan National Park in Balochistan, Pakistan, is known for its diverse flora and fauna, including rare species such as the Chiltan wild goat and Suleiman markhor.</div>
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$30 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Hazarganji-Chiltan National Park in Balochistan, Pakistan, is known for its rich biodiversity and is home to the endangered Chiltan wild goat.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Sapat Beach.jpeg" alt="Tourist Spot 3">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Sapat Beach</div>
+                    <div class="tourist-spot-description">Sapat Beach in Balochistan, Pakistan, is a pristine coastal stretch along the Arabian Sea, offering serene landscapes and a tranquil escape.</div>
+
+                    <div class="tourist-spot-rating">Rating: 4.2</div>
+                    <div class="tourist-spot-price">$50 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>The beach is home to a curious rock formation called Bujih Koh — a steep cliff rising from the sand entirely on its own. It’s separated from the cliff wall that stretches along the coast straddling the beach between its rocky embrace and the sea. The entire beach is home to a healthy colony of crabs.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Pir Ghaib.jpg" alt="Tourist Spot 4">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Pir Ghaib</div>
+                    <div class="tourist-spot-description">Pir Ghaib in Balochistan is a mystical and scenic gorge, renowned for its legend of a disappeared saint and its breathtaking natural beauty.</div>
+                    <div class="tourist-spot-rating">Rating: 5.0</div>
+                    <div class="tourist-spot-price">$180 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>A historical site associated with mysticism, believed to be the hiding place of a saint, with legends surrounding its mysterious disappearance and reappearance.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Hanna Lake.jpeg" alt="Tourist Spot 5">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Hanna Lake</div>
+                    <div class="tourist-spot-description">Hanna Lake in Balochistan, Pakistan, is a picturesque reservoir surrounded by mountains, offering a serene retreat with boating facilities and scenic views.</div>
+                    <div class="tourist-spot-rating">Rating: 4.3</div>
+                    <div class="tourist-spot-price">$29 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Was constructed during the British colonial era in the late 19th century and serves as a picturesque reservoir surrounded by hills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

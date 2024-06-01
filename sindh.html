@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <link rel="stylesheet" href="tourism.css">
+    <link rel= "stylesheet" href="Destinations.css">
+    <title> Sindh Tourism</title>
+</head>
+<body>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Explore Pakistan </label>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class ="active" href="Destinations.html">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="sindh.html">Sindh</a>
+                        <a href="Destinations.html">Punjab</a>
+                        <a href="Kashmir.html">Kashmir</a>
+                        <a href="KPK.html">KPK</a>
+                        <a href="Balochistan.html">Balochistan</a>
+                        <a href="Kashmir.html"> Kashmir</a>
+                        <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a  href="#">GeographicalHistory</a>
+                    <div class="dropdown-content">
+                        <a href="Geographical_history.html">Punjab</a>
+                        <a href="Sindh_GeoGraphical_History.html">Sindh</a>
+                        <a href="KPK-geo.html">KPK</a>
+                        <a href="Balochistan-geo.html">Balochistan</a>
+                        <a href="Kashmir-geo.html">Kashmir</a>
+                        <a href="Gilgit_Geographical_History.html">Gilgit Baltistan</a>
+                    </div>
+                </li>
+
+                <li><a href="About.html">About Us</a></li>
+
+                <li><a href="login.html">Login / Signup</a></li>
+
+            </ul>
+        </nav>
+    <main>
+        <section class="tourist-spots-container">
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces\karachi.png" alt="Tourist Spot 1">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">MAZAR-e-QAID</div>
+                    <div class="tourist-spot-description">Explore the tomb and visit the tomb of founder of Pakistan Quaid-e-Azam Muhammad Ali Jinnah.</div>
+                    <div class="tourist-spot-rating">Rating: 4.9</div>
+                    <div class="tourist-spot-price">$49 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p> This tomb is located at center of Karachi, near M.A Jinnah road.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/moenjodaro.png" alt="Tourist Spot 2">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Moen-Jo-Daro</div>
+                    <div class="tourist-spot-description">Explore the ancient city ever in the history about 5 thousand yearsa ago how a city looks like?</div>
+                    <div class="tourist-spot-rating">Rating: 3.6</div>
+                    <div class="tourist-spot-price">$31 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>It originates in larkana Distrcit, near Railway Station. Where there are mulitple places reveals the history of developments and much more.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/umerkot.png" alt="Tourist Spot 3">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Umerkot Fort</div>
+                    <div class="tourist-spot-description">The very old times fort in the memories of Akbar badshah and umar marai, this fort was built many years ago, it reflects the tragity of Jhangirs times.</div>
+                    <div class="tourist-spot-rating">Rating: 4.9</div>
+                    <div class="tourist-spot-price">$20 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>It is near the Tharparkar, the desert area, arrigated around 742610 feets a beautful fort.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/Chaukhanditombs.png" alt="Tourist Spot 4">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">Chaukhandi Tombs</div>
+                    <div class="tourist-spot-description">It was part of the Ancient Monument Preservation Act in 1922 and enjoys tremendous importance beingone of the historical buildings in Sindh.</div>
+                    <div class="tourist-spot-rating">Rating: 4.7</div>
+                    <div class="tourist-spot-price">$40 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>Chaukhandi Tombs is a highly fascinating design that depicts the local culture of Sindhi and Balochi.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tourist-spot-card" onclick="toggleInfo(this)">
+                <img class="tourist-spot-image" src="./Image Provinces/rohri.png" alt="Tourist Spot 5">
+                <div class="tourist-spot-info">
+                    <div class="tourist-spot-title">landsdowne Bridge</div>
+<div class="tourist-spot-description">landsdowne Bridge Sukkur is a bridge located in Sukkur, Pakistan. It is a cable-stayed bridge that spans the Indus River and connects the city of Sukkur to Rohri.</div>
+
+                    <div class="tourist-spot-rating">Rating: 4.9</div>
+                    <div class="tourist-spot-price">$51 per person</div>
+                    <div class="tourist-spot-history" style="display: none;">
+                        <p>When the great steel Ayub arch was constructed (1960_1962), railway traffic was shifted from Lansdowne Bridge to it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Function to toggle the visibility of tourist spot history
+        function toggleInfo(card) {
+            // Toggle the "active" class on the clicked card
+            card.classList.toggle("active");
+    
+            // Find the element with the class "tourist-spot-history" inside the clicked card
+            const history = card.querySelector(".tourist-spot-history");
+    
+            // Toggle the display property of the history element between "block" and "none"
+            // If it's currently "block," set it to "none"; otherwise, set it to "block"
+            history.style.display = (history.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>

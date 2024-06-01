@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="Nav_bar.css">
+    <div class="logo"></div>
+    <nav>
+
+        <label class="logo">Explore Pakistan </label>
+        <ul>
+            <li><a  href="Home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Destinations.html">Destinations</a>
+                <div class="dropdown-content">
+                    <a href="Destinations.html">Punjab</a>
+                    <a href="sindh.html">Sindh</a>
+                    <a href="KPK.html">KPK</a>
+                    <a href="Balochistan-geo.html">Balochistan</a>
+                    <a href="Kashmir.html">Kashmir</a>
+                    <a href="Gilgit Baltistan.html">Gilgit Baltistan</a>
+                </div>
+            </li>
+
+
+            <li class="dropdown">
+                <a  href="Geographical_history.html">Geographical History</a>
+                <div class="dropdown-content">
+                    <a href="Geographical_history.html">Punjab</a>
+                    <a href="Sindh_GeoGraphical_History.html">Sindh</a>
+                    <a href="KPK-geo.html">KPK</a>
+                    <a href="Balochistan-geo.html">Balochistan</a>
+                    <a href="Kashmir-geo.html">Kashmir </a>
+                    <a href="GB-geo.html">Gilgit Baltistan</a>
+                </div>
+            </li>
+
+
+            <li><a  href="About.html">About Us</a></li>
+            
+            <li><a class = "active" href="login.html">Login / Signup</a></li>
+
+        </ul>
+    </nav>
+    <title>Login/Signup</title>
+</head>
+<body>
+    <main>
+        <section class="login-signup-container">
+            <div id="login-form" class="form-container">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <div id="signup-form" class="form-container">
+                <h2>Sign Up</h2>
+                <form>
+                    <label for="new-username">Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+
+                    <label for="new-password">Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
